@@ -1,6 +1,6 @@
 @font-face {
   font-family: Myriad_set_pro_text; /* Гарнитура шрифта */
-  src: local('Myriad_set_pro_text'), url(../fonts/myriad-set-pro_text.woff); /* Для остальных браузеров */
+  src: local('Myriad_set_pro_text'), url(../fonts/myriad-set-pro_thin.woff); /* Для остальных браузеров */
 }
 
 html, body{margin:0;font-family: Myriad_set_pro_text, Arial sans-serif;}
@@ -13,3 +13,4 @@ html, body{margin:0;font-family: Myriad_set_pro_text, Arial sans-serif;}
 .head__link{color:#FFF}
 .head__buttom{background:#00BCD4;border:1px solid #00BCD4;padding:9px 24px;border-radius:70px;margin-left:14px;color:#FFF;}
 .head__buttom_transparent{border:1px solid #00BCD4;background:transparent;}
+.head__title{}
