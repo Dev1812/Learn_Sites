@@ -1,0 +1,18 @@
+# 1 час сессия 
+#php_value session.gc_maxlifetime 3600
+
+AddDefaultCharset utf-8
+DirectoryIndex index.php
+RewriteEngine On
+
+# не позволять httpd отдавать файлы, начинающиеся с точки (.htaccess, .svn, .git и прочие)
+RedirectMatch 403 /\..*$
+
+#RewriteRule ^id(.*)$ /profile/get/?id=$1 [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L]
+
+#rsd.putOnToThis
+
+#33333
