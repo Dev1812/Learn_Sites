@@ -32,43 +32,26 @@
   <!--<meta property="og:url" content="orig url">-->
   <meta property="og:description" content="<?php echo $page_description; ?>">
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-
-  <?php
-    if(isset($param['css'])) {
-      if(!is_array($param['css'])) {
-        $css = array($param['css']);
-      } else {
-        $css = $param['css'];
-      }
-      array_push($css, 'common.css');
-      foreach($css as $k=>$v) {
-        echo '<link rel="stylesheet" type="text/css" data-css-id="'.$k.'" href="/css/'.$v.'?'.time().'">';
-      }
-    }
-  ?>
-
-  <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-
+  <link href="css/common.css" rel="stylesheet">
 
 </head>
 <body>
 
 <div id="wrap1">
 
-  <div class="head">
-    <div class="head__wrap">
-      <div class="head__left fl_l">
-        <a class="head_link" href="/">AirOrder</a>
-      </div>
-      <div class="head__right fl_r">
-        <?php echo $head_right;?>
-      </div>
+
+<div class="head">
+  <div class="head__wrap">
+    <div class="head__left fl_l">
+      <a class="head__link" >Sitename</a>
+    </div>
+    <div class="head__right fl_r">
+      <a class="head__link"><button class="sign_in head__buttom">Войти</button></a>
+      <a class="head__link"><button class="sign_up head__buttom head__buttom_transparent">Регистрация</button></a>
     </div>
   </div>
+</div>
+
 <div class="wrap2">
   
 <div class="content">
@@ -94,19 +77,6 @@
 
 
 </div><!--wrap1-->
-
-  <?php
-    if(isset($param['js'])) {
-      if(!is_array($param['js'])) {
-        $js = array($param['js']);
-      } else {
-        $js = $param['js'];
-      }
-      //array_push($js, 'common.js');
-      foreach($js as $k=>$v) {
-        echo '<script type="text/javascript" data-js-id="'.$k.'" src="/js/'.$v.'?'.time().'"></script>';
-      }
-    }
-  ?>
+<script type="text/javascript" src="js/jquery.js"></script>
 </body>
 </html>
