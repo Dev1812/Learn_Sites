@@ -43,7 +43,7 @@
 <div class="head">
   <div class="head__wrap">
     <div class="head__left fl_l">
-      <a class="head__link" >Sitename</a>
+      <a class="head__link">Sitename</a>
     </div>
     <div class="head__right fl_r">
       <a class="head__link"><button class="sign_in head__buttom">Войти</button></a>

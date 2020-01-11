@@ -9,7 +9,7 @@ html, body{margin:0;font-family: Myriad_set_pro_text, Arial sans-serif;}
 
 .button{font-family: Myriad_set_pro_text, Arial, Helvetica sans-serif;}
 
-.head{background-color:transparent;padding:34px 54px;}
+.head{position:absolute;top:0;left:0;right:0;position:absolute;z-index:134;background-color:transparent;padding:34px 54px}
 .head__link{color:#FFF}
 .head__buttom{background:#00BCD4;border:1px solid #00BCD4;padding:9px 24px;border-radius:70px;margin-left:14px;color:#FFF;}
 .head__buttom_transparent{border:1px solid #00BCD4;background:transparent;}
