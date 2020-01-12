@@ -14,9 +14,9 @@ class Controller_Main extends Controller {
     $this->view = new View;
     
     if(User::isAuth()) {
-      header('Location: /profile?id='.$_SESSION['user_id']);
+     // header('Location: /profile?id='.$_SESSION['user_id']);
     }
-   // $this->model = new Model_Main;
+    $this->model = new Model_Main;
   }
 
   /**
@@ -34,7 +34,7 @@ class Controller_Main extends Controller {
       'page_description' => $i18n['main_description'],
       'page_keywords' => $i18n['main_keywords']
     );
-  //  $data['tasks'] = $this->model->getTasks();
+    $data['wall_items'] = $this->model->getItems();
     $this->view->generate('main_view.php', 'template_view.php', $param, $data, $i18n);
   }
 }

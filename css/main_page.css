@@ -2,16 +2,26 @@
 .container .container__background_image{background-image:url('../images/cvety-zheltye-rozovye-9445116.jpg');background-size:cover;background-repeat:no-repeat;position:absolute;top:0;left:0;right:0;bottom:0;}
 .container .container__gray_cover{background-color: #7d7d7d;opacity:0.62;z-index:100;position:absolute;top:0;left:0;right:0;bottom:0;}
 .container .container__body{position:absolute;top:0;left:0;right:0;bottom:0;}
-.container .container__body_wrap{position:absolute;top:0;left:0;right:0;bottom:0;text-align:center;padding-top:227px;z-index:200}
-  .container .container__body_title{font-size:54px;color:#FFF;margin-bottom:44px;}
-  .container .container__wrap{margin:0 auto;max-width:340px;}
+.container .container__body_wrap{position:absolute;top:0;left:0;right:0;bottom:0;text-align:center;padding-top:277px;z-index:200}
+  .container .container__body_title{font-size:41px;color:#FFF;margin-bottom:44px;}
+  .container .container__wrap{margin:0 auto;max-width:340px;padding:9px 0;}
 
-  .container .container__body_text{font-size:34px;color:#FFF;}
+  .container .container__body_text{font-size:25px;color:#FFF;}
 
   .container .container__body_start_button_wrap{margin-top:59px;} 
   .container .container__body_start_button{border:1px solid #FFF;background-color:transparent;color:#FFF;padding:9px 27px;border-radius:50px;cursor:pointer;}
   
-.head{position:absolute;top:0;left:0;right:0;position:absolute;z-index:134;background-color:transparent;padding:34px 54px}
+.head{top: 0;left: 0;right: 0;position: absolute;z-index: 134;background-color: transparent;padding: 18px 26px;border: 0!important;}
 
-.head__buttom{background:#00BCD4;border:1px solid #00BCD4;padding:9px 24px;border-radius:70px;margin-left:14px;color:#FFF;}
+.head__buttom{background:#00BCD4;border:1px solid #00BCD4;padding:5px 24px;border-radius:70px;margin-left:14px;color:#FFF;}
 .head__buttom_transparent{border:1px solid #00BCD4;background:transparent;}
+
+.head__title{color:#FFF;}
+
+
+.wall .wall__block .wall__block_title{font-size:24px;}
+.wall .wall__block .wall__block_body{font-size:19px;}
+.wall{margin: 0 auto;max-width: 550px!important;}
+.container .container__wrap{margin: 0 auto;max-width: 541px;}
+.wall .wall__block{padding: 21px 0 34px;}
+

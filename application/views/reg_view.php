@@ -7,7 +7,19 @@
         <FORM sction="" method="POST">
   	  <div>
         <?php
-var_dump($data);
+//var_dump($data);
+        ?>
+        <?php
+        echo '<div class="form__';
+          if(isset($data['reg_info'])) {
+            if(isset($data['reg_info']['is_error']) && !empty($data['reg_info']['is_error'])) {
+              if($data['reg_info']['is_error'] === true) {
+                var_dump($data);
+                echo '<div class="form__title">'.$data['reg_info']['error_message']['title'].'</div>';
+                echo '<div class="form__text">'.$data['reg_info']['error_message']['description'].'</div>';
+              }
+            }
+          }
         ?>
         <div class="input_wrap">
           <input type="text" name="user_first_name" placeholder="Ваше имя" class="text_field" autofocus="">

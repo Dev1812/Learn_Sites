@@ -25,10 +25,8 @@
   <meta http-equiv="Cache-Control" content="no-cache">
   <meta http-equiv="Pragma" content="no-cache">
 
-<!--  <meta property="og:site_name" content="Instagram">-->
   <meta property="og:title" content="<?php echo $page_title; ?>">
   <meta property="og:image" content="/images/icons/favicon.ico?2">
-  <!--<meta property="og:url" content="orig url">-->
   <meta property="og:description" content="<?php echo $page_description; ?>">
 
   <link href="css/common.css?<?php echo time(); ?>" rel="stylesheet">
@@ -44,10 +42,27 @@
     <div class="head__left fl_l">
       <a class="head__link head__title" href="/">Learn Wordpress</a>
     </div>
+<?php
+  if(!User::isAuth()) {
+?>
+
     <div class="head__right fl_r">
-      <a class="head__link head__buttom">Войти</a>
-      <a class="head__link sign_up head__buttom head__buttom_transparent">Регистрация</a>
+      <a class="head__link head__buttom" href="/log_in">Войти</a>
+      <a class="head__link sign_up head__buttom head__buttom_transparent" href="/reg">Регистрация</a>
     </div>
+
+<?php
+  } else {
+
+?>
+
+    <div class="head__right fl_r">
+      <a class="head__link head__buttom" href="/logout">Выход</a>
+    </div>
+
+<?php
+  }
+?>
   </div>
 </div>
 

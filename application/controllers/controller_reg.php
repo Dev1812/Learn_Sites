@@ -10,6 +10,9 @@ class Controller_Reg extends Controller {
   public $model = null;
 
   public function __construct() {
+    if(User::isAuth()) {
+    //  header('Location: /');
+    }
     $this->i18n = new i18n;
     $this->view = new View;
     $this->model = new Model_Reg;

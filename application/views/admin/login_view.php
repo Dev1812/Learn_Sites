@@ -5,6 +5,10 @@
   	<div class="form">
   	  <div class="form__title">Авторизация</div>
   	  <div>
+        <?php
+var_dump($data);
+        ?>
+        <FORM action="" method="POST">
   	  	<div class="input_wrap">
   	  	  <input type="text" name="user_email" placeholder="Ваш Email" class="text_field" autofocus="">
   	  	</div>
@@ -14,6 +18,7 @@
   	  	<div class="input_wrap">
   	  	  <input type="submit" name="user_form_submit" class="submit">
   	  	</div>
+      </FORM>
   	  </div>
   	</div>
   </div>
