@@ -12,8 +12,7 @@ class Controller_Admin extends Controller {
   public function __construct() {
     $this->i18n = new i18n;
     $this->view = new View;
-    
-   // $this->model = new Model_Main;
+    $this->model = new Model_Admin;
   }
 
   /**
@@ -31,7 +30,9 @@ class Controller_Admin extends Controller {
       'page_description' => $i18n['main_description'],
       'page_keywords' => $i18n['main_keywords']
     );
-  //  $data['tasks'] = $this->model->getTasks();
+    if(isset($_POST['user_form_submit']) && !empty($_POST['user_form_submit'])) {
+      $data['admin_info'] = $this->model->auth($_POST['user_email'], $_POST['user_password']);
+    }
     $this->view->generate('admin/login_view.php', 'template_view.php', $param, $data, $i18n);
   }
 }
