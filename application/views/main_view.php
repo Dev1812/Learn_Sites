@@ -19,4 +19,5 @@
 
 </div>
 
-<link rel="stylesheet" type="text/css" href="css/main_page.css">
+<link rel="stylesheet" type="text/css" href="css/main_page.css?<?php echo rand(); ?>">
+

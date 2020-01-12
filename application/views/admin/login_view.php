@@ -3,18 +3,11 @@
 <div class="container">
   <div class="container_wrap">
   	<div class="form">
-  	  <div class="form__title">Регистрация</div>
-        <FORM sction="" method="POST">
+  	  <div class="form__title">Авторизация</div>
   	  <div>
-        <?php
-var_dump($data);
-        ?>
-        <div class="input_wrap">
-          <input type="text" name="user_first_name" placeholder="Ваше имя" class="text_field" autofocus="">
-        </div>
-        <div class="input_wrap">
-          <input type="text" name="user_email" placeholder="Ваш Email" class="text_field" autofocus="">
-        </div>
+  	  	<div class="input_wrap">
+  	  	  <input type="text" name="user_email" placeholder="Ваш Email" class="text_field" autofocus="">
+  	  	</div>
   	  	<div class="input_wrap">
   	  	  <input type="text" name="user_password" placeholder="Ваш пароль" class="text_field">
   	  	</div>
@@ -22,7 +15,6 @@ var_dump($data);
   	  	  <input type="submit" name="user_form_submit" class="submit">
   	  	</div>
   	  </div>
-      </FORM>
   	</div>
   </div>
 </div>  

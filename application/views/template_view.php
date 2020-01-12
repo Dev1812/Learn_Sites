@@ -3,7 +3,6 @@
   $page_description = (isset($param['page_description']) && !empty($param['page_description'])) ? $param['page_description'] : '...';
   $page_keywords = (isset($param['page_keywords']) && !empty($param['page_keywords'])) ? $param['page_keywords'] : '...';
 ?>
-
 <!DOCTYPE html>
 <html>
 
@@ -32,7 +31,7 @@
   <!--<meta property="og:url" content="orig url">-->
   <meta property="og:description" content="<?php echo $page_description; ?>">
 
-  <link href="css/common.css" rel="stylesheet">
+  <link href="css/common.css?<?php echo time(); ?>" rel="stylesheet">
 
 </head>
 <body>
@@ -43,11 +42,11 @@
 <div class="head">
   <div class="head__wrap">
     <div class="head__left fl_l">
-      <a class="head__link head__title">Sitename</a>
+      <a class="head__link head__title" href="/">Learn Wordpress</a>
     </div>
     <div class="head__right fl_r">
-      <a class="head__link"><button class="sign_in head__buttom">Войти</button></a>
-      <a class="head__link"><button class="sign_up head__buttom head__buttom_transparent">Регистрация</button></a>
+      <a class="head__link head__buttom">Войти</a>
+      <a class="head__link sign_up head__buttom head__buttom_transparent">Регистрация</a>
     </div>
   </div>
 </div>
@@ -67,8 +66,10 @@
 
   <div class="footer">
     <div class="footer__wrap">
-      <a href="" class="footer__link">О сайте</a>
-      <a href="" class="footer__link">Правила</a>
+      <div class="about">Сайт выполнен для конкурса "Цифровой ветер" программистом Исаевым Тимуром</div>
+      <div class="footer__logo_wrap">
+        <img src="images/icons/ru_logo_20.png" width="140px">
+      </div>
     </div>
   </div>
 </div>
